@@ -10,7 +10,7 @@ class CategoryController extends Controller
     * Action untuk menampilkan semua kategori
     */
     public function index(){
-        $daftar_kategori = \App\Category::all();
+        $daftar_kategori = \App\Category::paginate(3);
         // return view("kategori.index", ["daftar_kategori" => $daftar_kategori]);
         return view("kategori.index", compact("daftar_kategori"));
     }

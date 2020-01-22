@@ -8,4 +8,7 @@
     <br/>
     @endforeach
 </ul>
-@endsection
+<hr>
+<!-- INI MERUPAKAN KODE UNTUK MENAMPILKAN PAGINATION -->
+{{$daftar_kategori->links()}}
+@endsections
